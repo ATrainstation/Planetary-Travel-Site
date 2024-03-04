@@ -1,0 +1,75 @@
+main {
+    background-size: cover;
+    background-position: 50% 54%;
+    height: 915px;
+    padding-top: 80px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.country {
+    font-size: 4.3rem;
+    color: #FFF;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    margin: 0;
+}
+
+
+.country__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+
+    background-color: #FFF;
+    box-shadow: none;
+}
+
+h2.day-header {
+    width: 90%;
+    color: black;
+    border-bottom: solid 3px black;
+}
+
+.card__itinerary {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card__itinerary h2 {
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 500;
+
+    background-color: $beige;
+    padding: 10px 60px;
+}
+
+#hawaii__background {
+    background-image: url('../assets/images/hawaii.jpg');
+}
+
+#iceland__background {
+    background-image: url('../assets/images/iceland.jpg');
+}
+
+#greece__background {
+    background-image: url('../assets/images/greece.jpg');
+}
+
+@media screen and (max-width: 1150px) {
+    main {
+        height: auto;
+    }
+
+    .book-now-box {
+        padding-bottom: 8%;
+    }
+
+    .card {
+        margin-bottom: 8%;
+    }
+}

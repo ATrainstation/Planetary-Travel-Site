@@ -1,0 +1,12 @@
+@import 'partials/1-helpers/_variables';
+@import 'partials/1-helpers/mixins';
+
+@import 'partials/2-basics/globals';
+
+@import 'partials/3-layout/header';
+@import 'partials/3-layout/footer';
+
+@import 'partials/4-pages/home';
+@import 'partials/4-pages/destination';
+@import 'partials/4-pages/booking';
+@import 'partials/4-pages/booking-done';

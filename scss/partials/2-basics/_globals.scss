@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+    font-family: "verdana", sans-serif;
+}
+
+body {
+    font-family: 'verdana', sans-serif;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3, p {
+    color: #FEFAF5;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+header a {
+    color: #FFEEDB;
+    padding: 6px 4px;
+}
+
+button {
+    display: flex;
+    color: #FFF;
+    background-color: #61C9A8;
+    font-size: 1rem;
+    font-weight: 200;
+    border: none;
+    border-radius: 36px;
+    padding: 10px 50px;
+    cursor: pointer;
+} 
+
+button:hover {
+    transform: scale(1.1);
+}; 
+
+.nav-bar {
+    position: fixed;
+    z-index: 100;
+
+    display: flex;
+    width: 100%;
+	justify-content: space-between;
+    height: 80px;
+    background-color: #000034;
+    padding: 0 8%;
+    align-items: center;
+    box-shadow: 6px 0px 6px rgba(0, 0, 0, 0.35);
+}
+
+.nav-bar h2 {
+    font-size: 1.8rem;
+    color: #FEFAF5;
+}
+
+.nav-bar__left, .nav-bar__right {
+	display: flex;
+	align-items: center;
+}
+
+.nav-bar__logo {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .nav-bar__logo:hover {
+    animation: wiggle 0.8s ease-in-out infinite;
+  }
+  
+  @keyframes wiggle {
+    0%, 100% {
+      transform: rotate(0);
+    }
+    25% {
+      transform: rotate(-5deg);
+    }
+    50% {
+      transform: rotate(5deg);
+    }
+    75% {
+      transform: rotate(-5deg);
+    }
+  }
+
+.nav-bar__right {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    width: 30%;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.nav-bar__right--underline {
+    border-bottom: 3.5px solid $orange;
+}
+
+.nav-bar__right li:hover {
+    transform: scale(1.5,1.5);
+}
+.nav-bar__right li a:hover {
+    color: #FFF;
+    background-color: $orange;
+    border-bottom: none;
+}
+
+.cards {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3%;
+    margin: 20px 0;
+    padding-bottom: 60px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border: solid 1px rgb(173, 173, 173);
+    border-radius: 5px;
+    width: 288px;
+    height: 414px;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.35);
+    margin-top: 4%;
+    padding-right: 8%;
+    background-size: cover;
+    overflow: hidden;
+  }
+    
+  .card:hover {
+    transform: scale(1.1, 1.1);
+  }
+
+.book-now-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-now-button {
+
+    color: #FFF;
+    background-color: $orange;
+    font-size: 1.2rem;
+    font-weight: 200;
+    border: none;
+    border-radius: 36px;
+    padding: 10px 50px;
+    cursor: pointer;
+}
+
+
+footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: auto;
+    background-color: $beige;
+    padding-top: 2rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 4%;
+    margin-bottom: 0px;
+}
+
+footer h2 {
+    color: #000034;
+    font-size: 2rem;
+}
+
+.footer {
+ 
+    &__image {
+        padding-top: 1rem;
+        height: 200px;
+        width: auto;
+    }
+
+&__article {
+    display: flex;
+    flex-direction: column;
+}
+}
+
+.footer__subHeader {
+    color: $orange;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.footer__info {
+    color: #000034;
+    font-size: 1.2rem;
+    font-weight: 500
+}
+
+.hours-operation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer__social__icons {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.3rem;
+    gap: 40px;
+}
+
+.social__icon {
+    height: 30px;
+    width: auto;
+}
+
+.social__icon:hover {
+    transform: scale(1.4);
+}
+
+@media screen and (max-width: 1150px) {
+
+    footer {
+        height: auto;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 8%;
+        margin-bottom: 0px;
+    }
+
+    .contact {
+        text-align: center;
+        padding-top: 6%;
+    }
+
+    .social {
+        text-align: center;
+        order: -1;
+    }
+    
+    article .hours {
+        text-align: center;
+        order: +2; 
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .nav-bar {
+        position: relative;
+        height: auto;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-bar__right {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

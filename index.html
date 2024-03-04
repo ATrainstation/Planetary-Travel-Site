@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Planet TravelSite</title>
+  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="scss/main.css">
+  <script src="/scripts/planetinfo.js" defer type="module"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="nav-bar">
+      <div class="nav-bar__logo">
+        <a href="index.html">
+          <h2>Planet TravelSite</h2>
+        </a>
+      </div>
+
+      <ul class="nav-bar__right">
+        <li><a class="nav-bar__right--underline" href="#">Home</a></li>
+        <li><a href="#planTrip">Vehicles</a></li>
+        <li><a href="#planTrip">Planets</a></li>
+        <!-- <li><a href="pages/constellations.html">Constellations</a></li> -->
+      </ul>
+    </nav>
+  </header>
+
+
+  <section class="hero">
+    <div class="hero__left">
+      <h1>Space Travel Comes With Endless Discoveries</h1>
+      <p>Embark on unforgettable cosmic adventures with Planet Express' cutting-edge vacation services. Discover distant planets, experience zero-gravity thrills, and create memories that defy the ordinary—your dream interstellar vacation starts here!</p>
+
+      <a href="#planTrip"><button class="hero__button">Get started</button></a>
+    </div>
+
+    <div class="hero__right">
+      <img class="hero__image" src="assets/images/space-ship.jpg" alt="ship flying around the earth" />
+    </div>
+
+  </section>
+
+    <section id="planTrip" class="trip">
+      <div class="trip__container">
+      <article class="trip__vehicles">
+        <div class="trip__headers">
+          <h2>Your Vehicle</h2>
+        </div>
+
+        <div class="trip__main">
+          <div class="vehicle__img__container">
+            <img class="trip__img" href=""></img>
+          </div>
+
+          <div class="vehicles__info">
+            <h3>Name</h3>
+            <p class="vehicle__name">Test information</p>
+
+            <h3>Top Speed</h3>
+            <p class="vehicle__speed">2452 Test information</p>
+
+            <h3>Cost</h3>
+            <p class="vehicle__cost">Test information</p>
+
+            <h3>Description</h3>
+            <p class="vehicle__desc">Test information Test information Test information Test informationTest informationTest information Test information Test information</p>
+          </div>
+        </div>
+
+        <!-- <div class="slider">
+          <label for="vehicleSelector">Select Value:</label>
+              <input type="range" id="vehicleSelector" name="vehicleSelector">
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+              </select> -->
+        <!-- </div> -->
+      </article>
+
+      <article class="trip__destination">
+        <div class="trip__headers">
+          <h2>Your Destination</h2>
+        </div>
+
+        <div class="trip__main">
+          <div class="planet__img__container">
+            
+          </div>
+
+          <div class="trip__destination__info">
+            <h3>Planet Name</h3>
+            <p class="dest__name">Test information</p>
+
+            <h3>Distance (Parsecs)</h3>
+            <p class="dest__parsecs">254525245 Test information</p>
+
+            <h3>Mass Relative to Earth</h3>
+            <p class="dest__massE">4545 Test information</p>
+
+            <h3>Discovered</h3>
+            <p class="dest__discovered">326 Test information</p>
+
+            <h3># of Orbits around Host Star</h3>
+            <p class="dest__orbit">34 Test information</p>
+
+            <h3># of Planets in Solar System</h3>
+            <p class="dest__numPlanets">3</p>
+
+          </div>
+        </div>
+          <!-- <div class="slider">
+            <label for="destSelector">Select Value:</label>
+              <input type="range" id="destSelector" name="destSelector">
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+              </input>
+          </div> -->
+          </div>
+      </article>
+    </div>
+      <div class="blast-off">
+        <h2>Blast Off!</h2>
+        <p class="travel-time"></p>
+        
+        <!-- <div class="trip__details">
+          <h3>Travel Time:</h3>
+          <p></p>
+        </div> -->
+      <div class="blast-off__button"><button type="submit">BLAST OFF!</button></div>
+      </div>
+    </section>
+
+    <!-- <section class="pages">
+      <section class="cards">
+        <a href="pages/vehicles.html">
+          
+          <article class="card hawaii-card card--overlay">
+            <img src="assets/images/001b-rocket.png" alt="">
+            <h2>Vehicles</h2>
+          </article>
+        </a>
+
+        <a href="pages/planets.html">
+          
+          <article class="card iceland-card card--overlay">
+            <img src="assets/images/004b-planets.png">
+            <h2>Planets</h2>
+          </article>
+        </a> -->
+
+        <!-- <a href="pages/constellations.html">
+          <article class="card greece-card card--overlay">
+            <h2>Constellations</h2>
+          </article>
+        </a> -->
+      </section>
+    </section>
+
+    <footer>
+      <div>
+        <img class="footer__image" src="assets/images/planet-express.jpg">
+      </div>
+
+      <article class="footer__article contact">
+        <h2>Contact</h2>
+        <div>
+          <p class="footer__subHeader">EMAIL</p>
+          <p class="footer__info">info@planetexpress.com</p>
+        </div>
+      </article>
+
+      <article class="footer__article hours">
+        <h2>Hours</h2>
+        <div class="hours-operation">
+          <div>
+            <p class="footer__subHeader">MONDAY-FRIDAY</p>
+            <p class="footer__info">9:00 AM - 5:00 PM</p>
+          </div>
+
+          <div>
+            <p class="footer__subHeader">SATURDAY</p>
+            <p class="footer__info">10:00 AM - 4:00 PM</p>
+          </div>
+
+          <div>
+            <p class="footer__subHeader">SUNDAY</p>
+            <p class="footer__info">CLOSED</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="footer__article social">
+        <h2>Social</h2>
+        <div class="footer__social__icons">
+          <a href="https://instagram.com"><img class="social__icon" src="assets/Icons/icon-instagram.png" /></a>
+          <a href="https://facebook.com"><img class="social__icon" src="assets/Icons/icon-facebook.png" /></a>
+          <a href="https://twitter.com"><img class="social__icon" src="assets/Icons/icon-twitter.png" /></a>
+        </div>
+      </article>
+
+    </footer>
+
+</body>
+
+</html>

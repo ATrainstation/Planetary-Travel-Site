@@ -1,0 +1,234 @@
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    background-color: #000034;
+    padding: 60px 8%;
+    padding-top: 8%;
+ 
+    &__button {
+        margin-top: 2rem;
+    }
+
+    &__left {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    align-self: flex-start;
+    padding-top: 40px;
+    padding-bottom: 2rem;
+}
+
+    &__left h1 {
+        color: #FFEEDB;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 30px 0px;
+}
+ 
+    &_left p {
+        color: #FFEEDB;
+    max-width: 100%;
+    line-height: 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+    &__left a {
+    width: 195px;
+}
+
+    &__right {
+    display: flex;
+    overflow: hidden;
+    
+}
+
+    &__image {
+    display: flex;
+    width: 550px;
+    height: auto;
+    transition: transform ease 0.8s;
+
+}
+
+&__image:hover {
+    transform: rotate(360deg); /* Rotate the image 360 degrees on hover */
+  }
+}
+
+iframe {
+    width: 20rem;
+    height: 20rem;
+}
+
+.trip {
+    background-color: rgb(255, 248, 241);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 2rem;
+    width: 100%;
+    border: 1px inset black;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+  }  
+
+  &__main {
+    display: flex;
+    gap: 1rem;
+
+  }
+
+  &__headers {
+    text-align: left;
+    padding-bottom: 2rem;
+  }
+  
+  &__vehicles {
+    border-top: 1px outset #FFEEDB;
+    border-bottom: 1px outset #FFEEDB;
+    border-right: 1px outset #FFEEDB;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 100%;
+
+  }
+
+  &__destination {
+    border-top: 1px outset #FFEEDB;
+    border-bottom: 1px outset #FFEEDB;
+    border-left: 1px outset #FFEEDB;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 100%;
+    margin: auto;
+  }
+  
+  &__img {
+    border: 1px solid black;
+    width: 20rem;
+    height: 20rem;
+  }
+  
+  &__info {
+    color: #000034;
+    width: 50%;
+    text-align: left;
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  h2, h3, p{
+    color: #000034;
+  }
+}
+
+  .slider {
+    padding-top: 2rem;
+    width: 50%;
+  }
+  
+  /* Additional styling for the range input if needed */
+  .slider input {
+    width: 100%;
+  }
+  
+  .blast-off {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+
+    &__button {
+        display: flex;
+        justify-content: center;
+    }
+  }
+
+.pages {
+    background-color: #000034;
+}
+
+.recommendations {
+    
+    padding: 2rem 8%;
+    font-size: 1.2rem;
+    margin-top: 40px;
+}
+
+.recommendations p, h2, h3, h4 {
+    color: #FFEEDB;
+}
+
+.card h2 {
+    color: #FFF;
+}
+
+.hawaii-card {
+    // background-image: url('assets/images/planet/001-rocket.png');
+    background-size: cover;
+}
+
+.iceland-card {
+    // background-image: url('assets/images/004-planet.png');
+    background-size: cover;
+}
+
+.greece-card {
+    background-image: url('../assets/images/greece.jpg');
+    background-size: cover;
+}
+
+.card--overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5); 
+    transition: background 0.35s ease;
+    z-index: 1;
+  }
+  
+  .card:hover::before {
+    background: rgba(255, 255, 255, 0); 
+  }
+
+@media screen and (max-width: 1150px) {
+    .hero {
+        height: auto;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        padding-top: 0;
+
+        &__left {
+            justify-content: center;
+            text-align: center;
+            align-self: center;
+            align-items: center;
+            padding-top: 8%;
+            padding-bottom: 8%;
+    }
+
+        &_left p {
+        max-width: 50%;
+    }
+}
+    .recommendations {
+        height: auto;
+        text-align: center;
+    }
+
+}

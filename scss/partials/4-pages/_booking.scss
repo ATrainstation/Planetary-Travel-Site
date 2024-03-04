@@ -1,0 +1,123 @@
+
+
+
+.main__form {
+    padding-top: 100px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(87, 87, 87, 0.2)), url('../assets/images/collage.png');
+    background-size: 110%;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.booking-form {
+    background-color: $blue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: $beige;
+    margin-bottom: 3rem;
+    flex-shrink: 1;
+  }
+
+  .booking-form h1 {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 40px;
+    color: $beige;
+}
+
+h3 {
+    color: $beige;
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin: 2px;
+    // text-align: right;    
+}
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  select,
+  input,
+  .form__button {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .destination__input {
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+  
+  select {
+    background-color: $orange;
+    color: $beige;
+  }
+  
+  input {
+    background-color: $beige;
+    color: $blue;
+  }
+  
+  .form__button h3 {
+    align-self: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .form__button {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    background-color: $orange;
+    text-align: center;
+    color: $beige;
+    cursor: pointer;
+    margin-top: 40px;
+    height: 42px;
+  }
+  
+  .form__button:hover {
+    background-color: $blue;
+    border: 3px solid $beige;
+    border-radius: 3px;
+    padding: 7px;
+    transform: scale(1.04);
+  }
+
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $beige;
+    border: 3px solid $orange;
+    border-radius: 5px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.5);
+    color: $blue;
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    text-align: center;
+  }
+
+  .overlay {
+    position: fixed;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 10;
+  }
+  
